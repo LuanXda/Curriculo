@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,60 +10,104 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
-      padding-bottom: 70px; 
+      padding-bottom: 70px;
       background-color: #f4f4f4;
     }
 
+    
     header {
       background-color: #333;
       color: white;
-      text-align: center;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
 
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+
+    .profile-pic img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .info h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    .info h2 {
+      margin: 5px 0;
+      font-size: 1.2em;
+      font-weight: normal;
+      color: #ccc;
+    }
+
+    .info p {
+      margin: 5px 0;
+      font-size: 0.95em;
+    }
+
+    
     nav {
       background-color: #666;
-      padding: 10px;
+      width: 100%;
     }
 
     nav ul {
       list-style: none;
-      padding: 0;
       margin: 0;
+      padding: 10px;
       display: flex;
       justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
 
     nav a {
-      color : white;
+      color: white;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    main {
-      max-width: 800px;
+      main {
+      max-width: 900px;
       margin: 20px auto;
       padding: 20px;
       background: white;
       border: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    section {
+      padding: 10px;
+      border-left: 4px solid #666;
+      background-color: #fafafa;
     }
 
     h2 {
       color: #333;
-      border-bottom: 2px solid #666;
-      padding-bottom: 5px;
-    }
-
-    aside {
-      background-color: #e9e9e9;
-      padding: 10px;
-      margin-top: 20px;
-      border: 2px solid #666;
+      margin-top: 0;
     }
 
     footer {
       text-align: center;
-      padding: 5px 10px;
+      padding: 10px;
       background-color: #333;
       color: white;
       position: fixed;
@@ -70,81 +115,74 @@
       bottom: 0;
       font-size: 0.85em;
     }
-
-    .profile-pic img {
-      display: block;
-      margin: 0 auto;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
   </style>
 </head>
 
 <body>
   <header>
-    <div class="profile-pic">
-      <img
-        src="C:\Users\luand\Downloads\WhatsApp Image 2025-09-04 at 20.10.02.jpeg"
-        alt="Retrato profissional"
-      />
+    <div class="header-content">
+      <div class="profile-pic">
+        <!-- Troque "foto.jpg" pelo nome real da sua imagem -->
+        <img src="c:\Users\luand\Downloads\foto.jpeg" alt="Retrato profissional" />
+      </div>
+      <div class="info">
+        <h1>Luan Matheus Delgado Machado</h1>
+        <h2>Desenvolvedor de Software</h2>
+        <p>Email: luan.delgadomachado@gmail.com | Telefone: (69) 99331-6116 | Localização: Cacoal, RO</p>
+      </div>
     </div>
-    <h1>Luan Matheus Delgado Machado</h1>
-    <h2>Desenvolvedor de Software</h2>
-    <p>Email: luan.delgadomachado@gmail.com | Telefone: (69) 99331-6116 | Localização: Cacoal, RO</p>
     <nav>
       <ul>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>
-        Eu sou um desenvolvedor apaixonado por tecnologia, com experiência em
-        HTML, CSS, JavaScript, Python.
-      </p>
-    </section>
+   <section id="sobre">
+  <h2>Sobre Mim</h2>
+  <p>
+    Sou um desenvolvedor apaixonado por tecnologia, com experiência em HTML, CSS, JavaScript e Python. 
+    Tenho facilidade em aprender, foco em resolver problemas de forma prática e sempre busco entregar 
+    soluções rapidas e de qualidade.
+  </p>
+  <p>
+    Acredito que devo ser escolhido pela dedicação, compromisso e vontade de crescer na área. 
+    Já atuei em projetos acadêmicos e profissionais, como no sistema de eventos da <strong>Eventix</strong>, 
+    além de desenvolver projetos pessoais que reforçam minhas habilidades técnicas e criativas.
+  </p>
+</section>
 
     <section id="experiencia">
       <h2>Experiência Profissional</h2>
-
-      <div style="border: 1px solid #666; padding: 10px; margin-bottom: 10px;">
+      <div style="border: 1px solid #666; padding: 10px;">
         <h3>Desenvolvedor Front-End</h3>
         <p><strong>Empresa Eventix</strong> - Agosto 2025</p>
         <p>
-          Atualmente trabalhando ardualmente em um sistema, de disponibilição para eventos e celebrações com 
-          o intuito de abragir novos horizontes para os senhorios das locações dos espaços alugados.
+          Atualmente trabalhando arduamente em um sistema de disponibilização para eventos e celebrações.
         </p>
       </div>
+    </section>
 
     <section id="habilidades">
       <h2>Habilidades Técnicas</h2>
       <ul>
-        <li>HTML  </li>
+        <li>HTML</li>
         <li>JavaScript</li>
-        <li> Python </li>
-        <li> Banco de Dados/SQL</li>
+        <li>Python</li>
+        <li>Banco de Dados / SQL</li>
         <li>Node.js</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>
-      Contato:
-      <a href="https://github.com/LuanXda" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </p>
+    <p>Contato: <a href="https://github.com/LuanXda" target="_blank">GitHub</a></p>
     <p>© 2025 Todos os direitos reservados.</p>
   </footer>
 </body>
+
 </html>
